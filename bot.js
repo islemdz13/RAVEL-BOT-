@@ -38,6 +38,20 @@ client.on('message', msg => {///حقوق بلو كودز
   }
 });
 
+if (message.content === prefix + "admin"){
+        const admin_embed = new Discord.RichEmbed()
+        .setColor("#3399CC")
+        .setTitle("خاصة بالأدمنية فمافوق")
+        .addField("/kick", "لطرد شخص قام بتخريب أو عصيان الاوامر")
+        .addField("/ban", "لحظر أحد قام بتخريب أو عصيان الأوامر")
+        .addField("/mute", "لكتم صوة أحد")
+        .addField("/unmute", "لكي تنزع الكتم عن الذي تم كتمه")
+        .addField("/warns", "لارسال تحذير على شخص قام بتخريب")
+        .addFooter("يمنع استعمال هذه الاوامر بدون أي سبب و الا سوف يتم سحب رتبتك")
+        message.channel.sendMessage(admin_embed)
+        console.log("خاص بالأدمنية")
+       }
+
 
 
 
