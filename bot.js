@@ -38,8 +38,8 @@ client.on('message', msg => {///حقوق بلو كودز
   }
 });
 
-client.on('message'.content === prefix + "admin"){
-        const admin_embed = new Discord.RichEmbed()
+client.on('message', message => {
+   const admin_embed = new Discord.RichEmbed()
         .setColor("#3399CC")
         .setTitle("خاصة بالأدمنية فمافوق")
         .addField("/kick", "لطرد شخص قام بتخريب أو عصيان الاوامر")
