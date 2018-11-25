@@ -38,7 +38,7 @@ client.on('message', msg => {///حقوق بلو كودز
   }
 });
 
-if (message.content === prefix + "admin"){
+client.on('message'.content === prefix + "admin"){
         const admin_embed = new Discord.RichEmbed()
         .setColor("#3399CC")
         .setTitle("خاصة بالأدمنية فمافوق")
